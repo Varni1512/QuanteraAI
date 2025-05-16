@@ -76,29 +76,29 @@ const Navbar = () => {
             const activeClasses =
               "text-transparent bg-clip-text bg-gradient-to-r from-[#1363C6] to-[#14183E] font-semibold";
 
-            if (type === "route") {
-              return (
-                <Link
-                  key={idx}
-                  to={to}
-                  onClick={() => setMenuOpen(false)}
-                  className={`${baseClasses} ${active ? activeClasses : "text-[#000000]"}`}
-                >
-                  {label}
-                </Link>
-              );
-            } else {
-              return (
-                <a
-                  key={idx}
-                  href={href}
-                  onClick={() => setMenuOpen(false)}
-                  className={`${baseClasses} ${active ? activeClasses : ""}`}
-                >
-                  {label}
-                </a>
-              );
-            }
+            // if (type === "route") {
+            //   return (
+            //     <Link
+            //       key={idx}
+            //       to={to}
+            //       onClick={() => setMenuOpen(false)}
+            //       className={`${baseClasses} ${active ? activeClasses : "text-[#000000]"}`}
+            //     >
+            //       {label}
+            //     </Link>
+            //   );
+            // } else {
+            //   return (
+            //     <a
+            //       key={idx}
+            //       href={href}
+            //       onClick={() => setMenuOpen(false)}
+            //       className={`${baseClasses} ${active ? activeClasses : ""}`}
+            //     >
+            //       {label}
+            //     </a>
+            //   );
+            // }
           })}
         </nav>
       </div>
