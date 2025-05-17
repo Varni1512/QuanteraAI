@@ -40,7 +40,7 @@ const BenefitsSection = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="group relative w-[425px] h-[240px] rounded-[10px] px-4 py-6 flex items-center justify-center border border-blue-600 overflow-hidden cursor-pointer"
+              className="group relative w-full max-w-[425px] h-[240px] rounded-[10px] px-4 py-6 flex items-center justify-center border border-blue-600 overflow-hidden cursor-pointer md:w-[425px]"
             >
               {/* Image + Title - slide up & fade out */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center transition-all duration-700 ease-in-out 
@@ -89,7 +89,7 @@ const BenefitsSection = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="group relative w-[425px] h-[240px] rounded-[10px] px-4 py-6 flex items-center justify-center border border-blue-600 overflow-hidden cursor-pointer"
+              className="group relative w-full max-w-[425px] h-[240px] rounded-[10px] px-4 py-6 flex items-center justify-center border border-blue-600 overflow-hidden cursor-pointer md:w-[425px]"
             >
               {/* Image + Title - slide up & fade out */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center transition-all duration-500 group-hover:-translate-y-full group-hover:opacity-0 ">
