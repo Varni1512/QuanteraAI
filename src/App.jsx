@@ -26,16 +26,16 @@ function HomePage() {
     <>
       <Navbar />
       <HeroSection />
-      <div id="about"><AboutUs /></div>
-      <div id="services"><MissionSection /></div>
-      <div id="features"><VisionSection /></div>
-      <BenefitsSection />
+      <div id="about" className="scroll-mt-[120px]"><AboutUs /></div>
+      <div id="services" className="scroll-mt-[120px]"><MissionSection /></div>
+      <VisionSection />
+      <div id="features" className="scroll-mt-[120px]"><BenefitsSection /></div>
       <AISolutionsSection />
       <WhyChooseUsPage />
-      <div id="faqs"><FAQPage /></div>
-      <div id="ourteam"><TeamMembersPage /></div>
+      <div id="faqs" className="scroll-mt-[120px]"><FAQPage /></div>
+      <div id="ourteam" className="scroll-mt-[120px]"><TeamMembersPage /></div>
       <TestimonialsPage />
-      <div id="contact"><ContactPage /></div>
+      <div id="contact" className="scroll-mt-[120px]"><ContactPage /></div>
       <Newsletter />
       <Footer />
     </>
