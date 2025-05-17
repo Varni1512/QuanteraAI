@@ -11,14 +11,12 @@ const AISolutionsSection = () => {
                 </button>
             </div>
 
-
-
-
             <div className="max-w-6xl mx-auto relative z-20">
                 {/* Header section */}
                 <div className="flex flex-col items-center mb-6">
-
-                    <span className="text-[25px] font-sansation font-bold mb-4 bg-gradient-to-r from-[#1363C6] to-[#14183E] bg-clip-text text-transparent">— Our Services</span>
+                    <span className="text-[25px] font-sansation font-bold mb-4 bg-gradient-to-r from-[#1363C6] to-[#14183E] bg-clip-text text-transparent">
+                        — Our Services
+                    </span>
 
                     <h2 style={{ color: '#000000' }} className="text-[50px] font-robotoslab font-bold md:text-4xl text-center mb-4">
                         Our Excellent AI Solutions
@@ -32,7 +30,6 @@ const AISolutionsSection = () => {
 
                 {/* Services grid with slight left shift */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 max-w-full md:max-w-[750px] md:-ml-0 mx-auto">
-
                     {[
                         {
                             img: "/AI1.png",
@@ -57,7 +54,7 @@ const AISolutionsSection = () => {
                     ].map((service, index) => (
                         <div
                             key={index}
-                            className="group relative rounded-[25px] w-[361px] h-[358px] p-6 flex flex-col items-center justify-center text-center border-2 border-[#1363C6] shadow-md hover:bg-gradient-to-r from-[#1363C6] to-[#14183E] transition duration-300"
+                            className="group relative rounded-[25px] h-[358px] p-6 flex flex-col items-center justify-center text-center border-2 border-[#1363C6] shadow-md hover:bg-gradient-to-r from-[#1363C6] to-[#14183E] transition duration-300 w-full max-w-[361px] mx-auto"
                         >
                             <div className="w-16 h-16 mb-4">
                                 <img
@@ -84,8 +81,6 @@ const AISolutionsSection = () => {
                             </h3>
                             <p className="text-[20px] text-gray-600 group-hover:text-white transition duration-300">{service.desc}</p>
                         </div>
-
-
                     ))}
                 </div>
             </div>
