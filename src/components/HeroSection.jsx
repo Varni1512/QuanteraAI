@@ -23,11 +23,11 @@ const HeroSection = () => {
           transformation, helping businesses thrive in the digital age.
         </p>
 
-        <div className="flex justify-center gap-4">
-          <button className="mt-6 px-6 py-3 border-2 border-blue-600 bg-gradient-to-r from-[#1363C6] to-[#14183E] text-white font-semibold rounded transition duration-300 hover:bg-white hover:from-transparent hover:to-transparent hover:text-transparent hover:bg-clip-text hover:[background-image:linear-gradient(to_right,#1363C6,#14183E)]">
+        <div className="flex justify-center gap-10">
+          <button className="mt-6 w-[250px] h-[70px] border-[2px] px-6 py-3 border-2 border-blue-600 bg-gradient-to-r from-[#1363C6] to-[#14183E] text-white font-semibold rounded transition duration-300 hover:bg-white hover:from-transparent hover:to-transparent hover:text-transparent hover:bg-clip-text hover:[background-image:linear-gradient(to_right,#1363C6,#14183E)]">
             Read More
           </button>
-          <button className="mt-6 px-6 py-3 border-2 border-blue-600 bg-gradient-to-r from-[#1363C6] to-[#14183E] text-white font-semibold rounded transition duration-300 hover:bg-white hover:from-transparent hover:to-transparent hover:text-transparent hover:bg-clip-text hover:[background-image:linear-gradient(to_right,#1363C6,#14183E)]">
+          <button className="mt-6 w-[250px] h-[70px] border-[2px] px-6 py-3 border-2 border-blue-600 bg-gradient-to-r from-[#1363C6] to-[#14183E] text-white font-semibold rounded transition duration-300 hover:bg-white hover:from-transparent hover:to-transparent hover:text-transparent hover:bg-clip-text hover:[background-image:linear-gradient(to_right,#1363C6,#14183E)]">
             Contact Us
           </button>
         </div>
