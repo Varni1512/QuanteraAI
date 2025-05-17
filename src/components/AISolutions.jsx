@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar';
 import TestimonialsPage from './TestimonialsPage';
 import ContactPage from './ContactPage';
@@ -6,6 +6,10 @@ import Newsletter from './Newsletter';
 import Footer from './Footer';
 
 const AISolutions = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const solutions = [
     {
       title: 'Artificial Intelligence (AI) General Services',
@@ -104,38 +108,36 @@ const AISolutions = () => {
         </div>
 
         <div className='px-4 md:px-8 lg:px-16 flex flex-col gap-8 mb-16'>
-          {solutions.map((solution, index) => {
-            return (
-              <div
-                key={index}
-                className="w-full max-w-7xl mx-auto mb-6 rounded-xl md:rounded-2xl lg:rounded-3xl p-[2px] bg-gradient-to-r from-[#1363C6] to-[#14183E]"
-              >
-                <div className="bg-white rounded-xl md:rounded-2xl lg:rounded-3xl border border-transparent shadow-sm p-4 md:p-6 lg:p-8 h-full">
-                  <div className="flex flex-col mb-4">
-                    <div className="flex flex-col items-center mb-4 mt-6 md:mt-10 lg:mt-14">
-                      <img src={solution.icon} alt="AI Icon" className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 mb-2" />
-                      <h3 className="text-lg md:text-xl lg:text-2xl font-roboto-slab font-bold bg-gradient-to-r from-[#1363C6] to-[#14183E] text-transparent bg-clip-text text-center mb-1">
-                        {solution.title}
-                      </h3>
-                      <p className="text-[#515151] font-roboto-slab text-center mt-2 md:mt-4 text-sm md:text-base lg:text-lg mb-4">{solution.des}</p>
-                    </div>
-                    <ul className="space-y-2 md:space-y-3 text-[#040404] ml-4 md:ml-8 lg:ml-16 mt-2">
-                      {solution.points.map((point, i) => (
-                        <li key={i} className="flex items-start font-Roboto-Slab">
-                          <span className="mr-2 text-blue-500 flex-shrink-0">✦</span>
-                          <span className="font-medium text-[#040404] font-roboto-slab text-sm md:text-base lg:text-lg">{point}</span>
-                        </li>
-                      ))}
-                    </ul>
+          {solutions.map((solution, index) => (
+            <div
+              key={index}
+              className="w-full max-w-7xl mx-auto mb-6 rounded-xl md:rounded-2xl lg:rounded-3xl p-[2px] bg-gradient-to-r from-[#1363C6] to-[#14183E]"
+            >
+              <div className="bg-white rounded-xl md:rounded-2xl lg:rounded-3xl border border-transparent shadow-sm p-4 md:p-6 lg:p-8 h-full">
+                <div className="flex flex-col mb-4">
+                  <div className="flex flex-col items-center mb-4 mt-6 md:mt-10 lg:mt-14">
+                    <img src={solution.icon} alt="AI Icon" className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 mb-2" />
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-roboto-slab font-bold bg-gradient-to-r from-[#1363C6] to-[#14183E] text-transparent bg-clip-text text-center mb-1">
+                      {solution.title}
+                    </h3>
+                    <p className="text-[#515151] font-roboto-slab text-center mt-2 md:mt-4 text-sm md:text-base lg:text-lg mb-4">{solution.des}</p>
                   </div>
+                  <ul className="space-y-2 md:space-y-3 text-[#040404] ml-4 md:ml-8 lg:ml-16 mt-2">
+                    {solution.points.map((point, i) => (
+                      <li key={i} className="flex items-start font-Roboto-Slab">
+                        <span className="mr-2 text-blue-500 flex-shrink-0">✦</span>
+                        <span className="font-medium text-[#040404] font-roboto-slab text-sm md:text-base lg:text-lg">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </main>
 
-      {/* Add additional components below main */}
+      {/* Additional Sections */}
       <TestimonialsPage />
       <ContactPage />
       <Newsletter />
