@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const teamMembers = [
   {
@@ -53,6 +53,12 @@ const teamMembers = [
 ];
 
 const TeamMembersPage = () => {
+  const [activeId, setActiveId] = useState(null);
+
+  const handleToggle = (id) => {
+    setActiveId((prev) => (prev === id ? null : id));
+  };
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       <div className="flex flex-col items-center mb-8">
@@ -71,6 +77,7 @@ const TeamMembersPage = () => {
           <div
             key={member.id}
             className="relative rounded-lg overflow-hidden cursor-pointer group"
+            onClick={() => handleToggle(member.id)}
           >
             <img
               src={member.src}
@@ -79,7 +86,15 @@ const TeamMembersPage = () => {
             />
 
             {/* Hover Overlay */}
-            <div className="absolute inset-0 group-hover:opacity-80 opacity-0 transition-opacity duration-300">
+            <div
+              className={`absolute inset-0 transition-opacity duration-300
+                ${
+                  activeId === member.id
+                    ? "opacity-80 z-20"
+                    : "opacity-0 group-hover:opacity-80"
+                }
+              `}
+            >
               {/* Blurred Background */}
               <div className="absolute inset-0 bg-gradient-to-r from-[#1363C6]/70 to-[#14183E]/70 backdrop-blur-sm z-0" />
 
@@ -97,8 +112,8 @@ const TeamMembersPage = () => {
                     rel="noopener noreferrer"
                     style={{ color: "#BEBEBE" }}
                     className="hover:scale-105 transition-transform duration-200"
+                    onClick={(e) => e.stopPropagation()} // Prevent closing overlay on LinkedIn click
                   >
-                    {/* LinkedIn SVG */}
                     <svg
                       width="40"
                       height="40"
