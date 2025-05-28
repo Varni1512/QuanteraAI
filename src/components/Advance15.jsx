@@ -150,7 +150,7 @@ const Advance15 = () => {
                         }}
                     >
                         <p className="text-[#14183E] text-sm sm:text-lg md:text-xl lg:text-[25px] font-Roboto Slab">
-                            If you are interested, please contact: 9827295020/ 7470500248 or quanteraai@gmail.com/ cheshtajain194@gmail.com
+                            If you are interested, please contact: 9827295020 / 7470500248 or quanteraai@gmail.com / cheshtajain194@gmail.com
                         </p>
                     </div>
                 </div>
