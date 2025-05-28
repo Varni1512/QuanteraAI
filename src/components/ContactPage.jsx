@@ -27,9 +27,9 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     // Replace these with your actual EmailJS credentials
-    const serviceID = 'service_45wg824';
-    const templateID = 'template_h4fq43h';
-    const publicKey = '6uzoKjp00tUfxZd_s';
+    const serviceID = 'service_x9emdoi';
+    const templateID = 'template_d5o52fy';
+    const publicKey = 'nE0DTkGpW9CdX5Ng1';
 
     emailjs.send(serviceID, templateID, formData, publicKey)
       .then((response) => {
@@ -145,8 +145,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
-
-
-
-
